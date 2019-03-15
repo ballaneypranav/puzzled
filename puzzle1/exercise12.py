@@ -6,8 +6,9 @@
 
 
 
-caps = ['F', 'F', 'B', 'B', 'B', 'F', 'B', 'B', 'B', 'F', 'F', 'B', 'F' ]
-cap2 = ['F', 'F', 'B', 'B', 'B', 'F', 'B', 'B', 'B', 'F', 'F', 'F', 'F' ]
+caps = ['F', 'F', 'B', 'B', 'B', 'F', 'B', 'B', 'B', 'F', 'F', 'B', 'F']
+
+cap2 = ['F', 'F', 'B', 'B', 'B', 'F', 'B', 'B', 'B', 'F', 'F', 'F', 'F']
 nocaps = []
 
 def pleaseConformOpt(caps):
@@ -34,6 +35,7 @@ def pleaseConformOpt(caps):
                 forward += 1
             else:
                 backward += 1
+                
             start = i
 
     if forward < backward:

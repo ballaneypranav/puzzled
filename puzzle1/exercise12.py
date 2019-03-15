@@ -8,8 +8,14 @@
 
 caps = ['F', 'F', 'B', 'B', 'B', 'F', 'B', 'B', 'B', 'F', 'F', 'B', 'F' ]
 cap2 = ['F', 'F', 'B', 'B', 'B', 'F', 'B', 'B', 'B', 'F', 'F', 'F', 'F' ]
+nocaps = []
 
 def pleaseConformOpt(caps):
+    # Handle empty lists
+    if (len(caps) == 0):
+        print ('No caps.')
+        return
+
     #Initialization
     start = 0
     forward = 0
@@ -43,6 +49,11 @@ def pleaseConformOpt(caps):
 
 
 def pleaseConformOnepass(caps):
+    # Handle empty lists
+    if (len(caps) == 0):
+        print ('No caps.')
+        return
+
     caps = caps + [caps[0]]
     for i in range(1, len(caps)):
         if caps[i] != caps[i-1]:
@@ -53,6 +64,11 @@ def pleaseConformOnepass(caps):
             else:
                 print ('People in positions', begin, 'through', i-1, 'flip your caps!')
 
-                           
+print ('1 - caps')     
 pleaseConformOpt(caps)
+print ('2 - caps')
 pleaseConformOnepass(caps)
+print ('1 - nocaps')
+pleaseConformOpt(nocaps)
+print ('2 - nocaps')
+pleaseConformOnepass(nocaps)

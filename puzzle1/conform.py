@@ -4,7 +4,8 @@
 #Output is a set of commands (printed out) to get either all F's or all B's
 #Fewest commands are the goal
 
-caps = ['F', 'F', 'B', 'B', 'B', 'F', 'B', 'B', 'B', 'F', 'F', 'B', 'F' ]
+caps = ['F', 'F', 'B', 'B', 'B', 'F', 'B',
+        'B', 'B', 'F', 'F', 'B', 'F' ]
 cap2 = ['F', 'F', 'B', 'B', 'B', 'F', 'B', 'B', 'B', 'F', 'F', 'F', 'F' ]
 
 def pleaseConform(caps):
